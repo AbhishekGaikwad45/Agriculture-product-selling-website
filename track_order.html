@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track order</title>
+    <link rel="stylesheet" href="./css/Bootstrap.min.css">
+    <script src="./js/Bootstrap.bundel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./css/trackorder.css">
+</head>
+<body >
+<!-- first section -->
+<section class="navbar1">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="navitem">
+              <a class="nav-link active" aria-current="page" href="#">Sell on Bighaat ||</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Emailjs.html">Bulk Order Inquires ||</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="About.html">Corporate Site ||</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Emailjs.html">Contact Us ||</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+<!-- section 2 navbar -->
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid container-fluid2">
+        <a class="navbar-brand" href="#"><img src="./images/bighaat-logo.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+            <li class="nav-item py-4">
+              <a class="nav-link active Home" id="navlink" href="index.html" tabindex="-1" aria-disabled="true" >
+                Home</a>
+            </li>
+            
+            
+            <li class="nav-item dropdown py-4">
+              <a class="nav-link active dropdown-toggle Home" href="#" id="navlink" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Marathi</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Tamil</a></li>
+              </ul>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link active" id="navlink" href="track_order.html" tabindex="-1" aria-disabled="true" style="padding-left:20px ;">
+                <i class="fa-solid fa-truck" id="truck"></i><br>Track Order</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link active" id="navlink" href="wishlist.html" tabindex="-1" aria-disabled="true" >
+                <i class="fa-solid fa-heart" id="icon" ></i> <br>Wishlist</a>
+            </li>
+            <li class="nav-itemn py-2">
+              <a class="nav-link active" id="navlink" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="fa-regular fa-user" id="icons"></i> <br>Login</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link active" id="navlink" href="cart.html" tabindex="-1" aria-disabled="true">
+                <i class="fa-solid fa-cart-shopping" id="cart" ></i> <br>Cart</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control " id="input" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+            <button class="btn btn-outline-success" type="submit">search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+</section>
+    <!------------------------------------ -----------Modal----------------------------------------- -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mod" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        
+
+          <div class="mb-3">
+            <label for="email" class="form-labels mod">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-labels mod">Password</label><br>
+            <input type="password" id="password" name="password" class="form-control" maxlength="10" required placeholder="Enter your password">
+          </div>
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="signup.html" class="signup-link account">Don't have an account?</a><a class="sign" href="sign up.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- offcanvas section -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel" class="text-center">Cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-center" >
+    <p>No Product Add to Cart</p>
+    <button class="btn btn-success"><a class="shopping" href="cart.html">continue shopping</a></button>
+    
+  </div>
+</div>
+<!-- Truck your order -->
+ <section >
+    <div class="container mt-5" id="form">
+
+  
+       
+            <div class="container mt-5" id="form">
+                <label for="inputPhone" class="form-label mt-1">Sign in to save more</label>
+                <input type="tel" id="inputPhone" class="form-control mt-3" placeholder="Enter your Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="phoneHelpBlock">
+                <div id="phoneHelpBlock" class="form-text mt-3">
+                  Enter a valid phone number to receive updates.
+                </div>
+            <button class="btn-success">continue</button><br>
+            By continuing you agree that you have read and accept our Terms & Conditions and Privacy Policy
+        </div>
+        </div>
+        
+            
+
+ </section>
+   
+</body>
+</html>

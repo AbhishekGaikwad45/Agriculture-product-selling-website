@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:  white; 
+    color:black;
+}
+.navbar1 {
+    background-color: green;
+    height: 50px;
+  
+  }
+
+  #navbarNav {
+    justify-content: flex-end;
+    padding-bottom: 12px;
+    
+  }
+  #navitem{
+    padding-bottom: 8px;
+
+  }
+
+  .container-fluid {
+    padding-inline: 20px;
+
+  }
+  .container-fluid2{
+    background-color: white;
+  }
+  #navlink{
+    padding-left: 20px;
+  }
+  #icon{
+    padding-left: 20px;
+  }
+  #icons{
+    padding-left: 10px;
+  }
+  #truck{
+    padding-left: 30px;
+  }
+  #cart{
+    padding-left: 5px;
+  }
+
+.btf {
+    height: 30px;
+    width: 150px;
+    border-radius: 1px;
+   color: white;
+   text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.btf a {
+    color: white;
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+    line-height: 20px; /* Center the text vertically */
+    
+}
+
+
+.nav2 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* margin: 0px; */
+    background-color:white;
+    color: black;
+}
+
+.order {
+    display: flex;
+}
+
+.drop {
+    padding-top: 10px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    color: black;
+    /* background-color: whitesmoke; */
+}
+.drops
+{
+    background-color: white;
+}
+
+
+/* Custom styles for centering the navbar items */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Adding space between items */
+}
+
+/* Reduce navbar height */
+.navbar {
+    height: 50px; /* Reduced height */
+}
+
+.navbar .navbar-brand img {
+    height: 50px; /* Adjust logo size */
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 8px 10px; /* Reduce padding for links */
+}
+
+.navbar .navbar-toggler {
+    padding: 5px 10px; /* Reduce toggler button size */
+}
+
+/* Adjust search input field height and width */
+.navbar .form-control {
+    height: 40px; /* Increased height */
+    width: 300px;
+    
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+/* Adjust the button height */
+.navbar .btn-outline-success {
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: rgb(250, 149, 39);
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+
+.navbar .form-control:focus ~ .navbar-nav .nav-item,
+.navbar .form-control:focus ~ .navbar-nav .dropdown {
+    display: none;
+}
+.account{
+    color: black;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #bef0d3;
+  }

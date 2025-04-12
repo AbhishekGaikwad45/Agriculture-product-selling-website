@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About</title>
+    <link rel="stylesheet" href="./css/Bootstrap.min.css">
+    <script src="./js/Bootstrap.bundel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/About.css">
+    <!-- <link rel="stylesheet" href="./css/signup.css"> -->
+    
+    
+</head>
+<body>
+    <!-- first section -->
+   <!-- first section -->
+   <section class="navbar1">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="navitem">
+              <a class="nav-link active" aria-current="page" href="#">Sell on Bighaat ||</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Emailjs.html">Bulk Order Inquires ||</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="About.html">Corporate Site ||</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Emailjs.html">Contact Us ||</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+<!-- section 2 navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid container-fluid2">
+      <a class="navbar-brand" href="#"><img src="./images/bighaat-logo.webp" alt="" style="height: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+          <li class="nav-item py-4">
+            <a class="nav-link active Home" id="navlink" href="index.html" tabindex="-1" aria-disabled="true" >
+              Home</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown py-4">
+            <a class="nav-link active dropdown-toggle Home" href="#" id="navlink" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hindi</a></li>
+              <li><a class="dropdown-item" href="#">Marathi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Tamil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link active" id="navlink" href="track_order.html" tabindex="-1" aria-disabled="true" style="padding-left:20px ;">
+              <i class="fa-solid fa-truck" id="truck"></i><br>Track Order</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link active" id="navlink" href="wishlist.html" tabindex="-1" aria-disabled="true" >
+              <i class="fa-solid fa-heart" id="icon" ></i> <br>Wishlist</a>
+          </li>
+          <li class="nav-itemn py-2">
+            <a class="nav-link active" id="navlink" href="" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-regular fa-user" id="icons"></i> <br>Login</a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link active" id="navlink" href="cart.html" tabindex="-1" aria-disabled="true">
+              <i class="fa-solid fa-cart-shopping" id="cart" ></i> <br>Cart</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control " id="input" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+          <button class="btn btn-outline-success" type="submit">search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+</section>
+    <!------------------------------------ -----------Modal----------------------------------------- -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mod" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        
+
+          <div class="mb-3">
+            <label for="email" class="form-labels mod">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-labels mod">Password</label><br>
+            <input type="password" id="password" name="password" class="form-control" maxlength="10" required placeholder="Enter your password">
+          </div>
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="signup.html" class="signup-link account">Don't have an account?</a><a class="sign" href="sign up.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-success">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- offcanvas section -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel" class="text-center">Cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-center" >
+    <p>No Product Add to Cart</p>
+    <button class="btn btn-success"><a class="shopping" href="cart.html">continue shopping</a></button>
+    
+  </div>
+</div>    
+<!-- About section -->
+
+  <section>
+    
+            <h2 class="text-center py-5">About</h2>    
+              
+  </section>
+<!-- information section -->
+ <section>
+    <div class="container">
+        <h2 class="text-center">The bedrock of farmers</h2>
+        <p>With a constantly flourishing family of 17 million+ farmers and 400+ partner brands, BigHaat continues to revolutionize the digital agri-ecosystem in India. Our multi-channel approach helps farmers unlock new dimensions of agriculture in the country.
+
+            To bring new meaning and hope to farmers’ lives, BigHaat strives to enable holistic farming solutions that empower farmers in making informed farming decisions, safeguarding their crops, accessing untapped global markets, getting fair prices, and reaping maximum benefits.</p>
+    </div>
+ </section>
+
+ <div class="container">
+    <h1 class="text-center">Our business</h1>
+    <p>BigHaat’s aim is to empower the farming community and enable them to take well informed decisions by delivering the right set of information, products, and services at their disposal. We help farmers to increase and improve productivity while adhering to the highest domestic and international market standards. With our customer first philosophy, we also enable farmers get the best price for their produce by safeguarding fair and transparent pricing through our market linkage programs.</p>
+ </div>
+ <div class="container text-center">
+    <h1>BigHaat’s Sustainability Development Program</h1>
+    <p>In recent years, BigHaat has been committed to designing and launching a "Sustainability Development Program" facilitating backward integration adapted to IPM practices. Quality assurance discriminates use of inputs to maximize yields with an uninterrupted supply chain model and price benefits for the farmers. 
+
+        BigHaat’s on-farm team facilitates knowledge sharing and handholding of Good Agronomical Practices (GAP), ensuring safe farming techniques. 
+        
+        This data-driven farmer-centric program encourages formulating, implementing, and regulating food-safe agrochemical practices in accordance with international standards.</p>
+ </div>
+ <!-- footer section -->
+<footer class="mt-5 mb-2" style="background-color: rgb(171, 252, 171); color:black;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./images/bighaat-logo.webp" alt="">
+            </div>
+            <div class="col-md-3">
+                <h4>Our Locations</h4>
+                <li>Bangaluru</li>
+                <li>Hydrabad</li>
+                <li>Mumbai</li>
+                <li>Pune</li>
+                <li>Gurugram</li>
+
+            </div>
+            <div class="col-md-3">
+                <h4>Email Us</h4>
+                <a class="link" href="Emailjs.html" style="color: rgb(14, 199, 14);"><i class="fa-solid fa-envelope"></i>Agri@bighaat.com</a>
+
+                <h4>Connect With Us</h4>
+               <span style="display: flex; justify-content: space-evenly; width: 100%; color: green;">
+               <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+             </span>
+
+
+
+            </div>
+            <div class="col-md-3">
+                <h4>Other</h4>
+                <li>About</li>
+                <li>Our Team</li>
+                <li>Investor Relations</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+                <li>Agri Store</li>
+                <li>Kisan Vedika</li>
+
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+    </section>
+        </body>
+</html>
