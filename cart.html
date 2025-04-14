@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>cart</title>
     <link rel="stylesheet" href="./css/Bootstrap.min.css">
     <script src="./js/Bootstrap.bundel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./css/index.css"> -->
     <link rel="stylesheet" href="./css/cart.css">
+    
 </head>
 <body>
     <!-- first section -->
@@ -40,21 +42,17 @@
   <!-- section 2 navbar -->
       <section>
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid" style="background-color:whitesmoke;">
+          <div class="container-fluid container-fluid2">
             <a class="navbar-brand" href="#"><img src="./images/bighaat-logo.webp" alt="" style="height: 50px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-1 mb-lg-0">
-                <li class="nav-item py-4">
-                  <a class="nav-link active Home" id="navlink" href="index.html" tabindex="-1" aria-disabled="true" >
-                    Home</a>
-                </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 
                 
                 <li class="nav-item dropdown py-4">
-                  <a class="nav-link active dropdown-toggle Home" href="#" id="navlink" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link active Home dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     English
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -64,8 +62,12 @@
                     <li><a class="dropdown-item" href="#">Tamil</a></li>
                   </ul>
                 </li>
+                <li class="nav-item py-0">
+                    <a class="nav-link active Home" id="navlink" href="About.html" tabindex="-1" aria-disabled="true" style="padding-left:20px ;">
+                      <br>About</a>
+                  </li>
                 <li class="nav-item py-2">
-                  <a class="nav-link active" id="navlink" href="track_order.html" tabindex="-1" aria-disabled="true" style="padding-left:20px ;">
+                  <a class="nav-link active" id="navlink" href="track_order.html" tabindex="-1" aria-disabled="true" >
                     <i class="fa-solid fa-truck" id="truck"></i><br>Track Order</a>
                 </li>
                 <li class="nav-item py-2">
@@ -77,7 +79,7 @@
                     <i class="fa-regular fa-user" id="icons"></i> <br>Login</a>
                 </li>
                 <li class="nav-item py-2">
-                  <a class="nav-link active" id="navlink" href="cart.html" tabindex="-1" aria-disabled="true">
+                  <a class="nav-link active" id="navlink" href="#" tabindex="-1" aria-disabled="true" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="fa-solid fa-cart-shopping" id="cart" ></i> <br>Cart</a>
                 </li>
               </ul>
@@ -92,40 +94,40 @@
         
     </section>
         <!------------------------------------ -----------Modal----------------------------------------- -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title mod" id="staticBackdropLabel">Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title mod" id="staticBackdropLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+            
+    
+              <div class="mb-3">
+                <label for="email" class="form-labels mod">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
               </div>
-              <div class="modal-body">
-                <form>
-                
-        
-                  <div class="mb-3">
-                    <label for="email" class="form-labels mod">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
-                  </div>
-        
-                  <div class="mb-3">
-                    <label for="password" class="form-labels mod ">Password</label><br>
-                    <input type="password" id="password" name="password" class="form-control" maxlength="10" required placeholder="Enter your password">
-                  </div>
-                  
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="forgot-password">Forgot Password?</a>
-                    <a href="signup.html" class="signup-link account">Don't have an account?</a><a class="sign" href="sign up.html">Sign up</a>
-                  </div>
-                </form>
+    
+              <div class="mb-3">
+                <label for="password" class="form-labels mod ">Password</label><br>
+                <input type="password" id="password" name="password" class="form-control" maxlength="10" required placeholder="Enter your password">
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-outline-success">Sign In</button>
+              
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <a href="signup.html" class="signup-link account">Don't have an account?</a><a class="sign" href="sign up.html">Sign up</a>
               </div>
-            </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-outline-success">Sign In</button>
           </div>
         </div>
+      </div>
+    </div>
     
     <!-- offcanvas section -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -135,671 +137,311 @@
       </div>
       <div class="offcanvas-body text-center" >
         <p>No Product Add to Cart</p>
-        <button class="btn btn-success"><a class="shopping" href="">continue shopping</a></button>
+        <button class="btn btn-success succ"><a class="shopping" href="cart.html">continue shopping</a></button>
         
       </div>
     </div>
-    <!-- Section 3 -->
-     <section>
-       
-        </section>
-        <!-- SECTION THIRD -->
-         <section>
-          
-          <div class="cont mt-1 mb-1">
-            <h1 class="plant">Plant Nutrition</h1>
-          </div>
-          
-         </section>
+
     <!-- cart section -->
+
     <section>
-      <div class="container mb-5">
-        <h4 class="text-center mt-3">Products</h4>
-        
-        <div class="row gx-4" > 
-          <div class="col-md-3" >
-            <div class="card">
-              <img src="./images/offer1.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Nativo Fungicide</h5>
-                <p>Bayer </p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>110<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>180</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>70</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">10gms</option>
-                  <option value="500ml">50gms</option>
-                  <option value="750ml">100gms</option>
-                  <option value="1000ml">500gms</option>S
-                </select>
-               <button><a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button> 
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
+      <div class="container">
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-12 col-md-3">
+            <div class="product-card">
+              <img src="./images/offer1.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Nativo Fungicide</h3>
+                  <div class="brand">Bayer</div>
+                  <div>
+                    <span class="price">₹110</span>
+                    <span class="old-price">₹180</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>31</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">100 grm</option>
+                          <option value="500ml">250 grm</option>
+                          <option value="750ml">500 grm</option>
+                          <option value="1000ml">1000 grm</option>
+                        </select>
+                </div>
+                <div class="btn-group">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" >
-              <img src="./images/offer2.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Hectere Mango picker</h5>
-                <p>sickle innovation pvt ltd</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>509<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>599</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>98</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">250ml</option>
-                  <option value="500ml">500ml</option>
-                  <option value="750ml">750ml</option>
-                  <option value="1000ml">1000ml</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
+    
+          <!-- Product 2 -->
+          <div class="col-12 col-md-3">
+            <div class="product-card">
+              <img src="./images/offer2.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Hectere Mango Picker</h3>
+                  <div class="brand">sickle innovation pvt ltd</div>
+                  <div>
+                    <span class="price">₹509</span>
+                    <span class="old-price">₹599</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>98</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">1 unit</option>
+                          <option value="500ml">2 unit</option>
+                          <option value="750ml">3 unit</option>
+                          <option value="1000ml">4 unit</option>
+                        </select>
+                </div>
+                <div class="btn-group">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>      
+          <!-- Product 3 -->
+          <div class="col-12 col-md-3">
+            <div class="product-card">
+              <img src="./images/offer3.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Planofix Plant Growth</h3>
+                  <div class="brand">Bayer</div>
+                  <div>
+                    <span class="price">₹199</span>
+                    <span class="old-price">₹230</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>31</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">100ml</option>
+                          <option value="500ml">250ml</option>
+                          <option value="750ml">500ml</option>
+                          <option value="1000ml">1000ml</option>
+                        </select>
+                </div>
+                <div class="btn-group">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card" >
-              <img src="./images/offer3.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">planofix Plant Growth</h5>
-                <p>Bayer </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>199<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>150</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>31</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">250ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1000ml</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
+    
+          <!-- Product 4 -->
+          <div class="col-12 col-md-3">
+            <div class="product-card">
+              <img src="./images/offer4.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Admire Insecticides</h3>
+                  <div class="brand">Bayer</div>
+                  <div>
+                    <span class="price">₹171</span>
+                    <span class="old-price">₹205</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>31</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">100ml</option>
+                          <option value="500ml">250ml</option>
+                          <option value="750ml">500ml</option>
+                          <option value="1000ml">1000ml</option>
+                        </select>
+                </div>
+                <div class="btn-group">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
-            </div>
-          </div>
-
-         <div class="col-md-3">
-            <div class="card" >
-              <img src="./images/offer4.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Admire Insecticides </h5>
-                <p>Bayer </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>171<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>205</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>34</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">10grm</option>
-                  <option value="500ml">100gms</option>
-                  <option value="750ml">250grm</option>
-                  <option value="1000ml">500grm</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
             </div>
           </div>
         </div>
-
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/offer9.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Jump Insecticides</h5>
-                <p>Bayer </p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>58<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>80</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>22</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">2gms</option>
-                  <option value="500ml">10gms</option>
-                  <option value="750ml">100gms</option>
-                  <option value="1000ml">200gms</option>S
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
+    
+        <div class="row g-4">
+          <!-- Product 5 -->
+          <div class="col-12 col-md-3 ">
+            <div class="product-card mt-4">
+              <img src="./images/offer9.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Jump Insecticides</h3>
+                  <div class="brand">Bayer</div>
+                  <div>
+                    <span class="price">₹58</span>
+                    <span class="old-price">₹80</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>22</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">20 grm</option>
+                          <option value="500ml">50 grm</option>
+                          <option value="750ml">100 grm</option>
+                          <option value="1000ml">250 grm</option>
+                        </select>
+                </div>
+                <div class="btn-group button">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mt-3">
-            <div class="card">
-              <img src="./images/offer6.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">212 F1 Hybrid Brinjal..</h5>
-                <p>VNR</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>168<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>224</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>56</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">10gms</option>
-                  <option value="500ml">20gms</option>
-                  <option value="750ml">100gms</option>
-                  <option value="1000ml">250gms</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
+    
+          <!-- Product 6 -->
+          <div class="col-12 col-md-3 ">
+            <div class="product-card mt-4">
+              <img src="./images/offer6.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>212 F1 Hybrid Brinjal</h3>
+                  <div class="brand">VNR</div>
+                  <div>
+                    <span class="price">₹168</span>
+                    <span class="old-price">₹224</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>56</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">100 grm</option>
+                          <option value="500ml">200 grm</option>
+                          <option value="750ml">250 grm </option>
+                          <option value="1000ml">500 grm</option>
+                        </select>
+                </div>
+                <div class="btn-group button">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>      
+          <!-- Product 7 -->
+          <div class="col-12 col-md-3">
+            <div class="product-card mt-4">
+              <img src="./images/offer7.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>Indofil M-45 Fungiside</h3>
+                  <div class="brand">Indofil</div>
+                  <div>
+                    <span class="price">₹169</span>
+                    <span class="old-price">₹182</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>13</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">250 grm</option>
+                          <option value="500ml">500 grm</option>
+                          <option value="750ml">700 grm</option>
+                          <option value="1000ml">1000 grm</option>
+                        </select>
+                </div>
+                <div class="btn-group button">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/offer7.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Indofil M-45 Fungicide</h5>
-                <p>Indofil </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>169<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>182</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>13</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">250gms</option>
-                  <option value="500ml">500gms</option>
-                  <option value="750ml">750gms</option>
-                  <option value="1000ml">1000gms</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
+    
+          <!-- Product 8 -->
+          <div class="col-12 col-md-3 ">
+            <div class="product-card mt-4">
+              <img src="./images/offer8.webp" alt="Product" class="product-image"/>
+              <div class="product-details">
+                <div>
+                  <h3>No Virus Bio Viricide</h3>
+                  <div class="brand">Geolife Agritech India Pvt Ltd</div>
+                  <div>
+                    <span class="price">₹285</span>
+                    <span class="old-price">₹700</span>
+                    <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>415</span>
+                  </div>
+                  
+                        <b>Size:</b>
+                        <select class="rs mt-3">
+    
+                          <option value="250ml">100 ml</option>
+                          <option value="500ml">250 ml</option>
+                          <option value="750ml">500 ml</option>
+                          <option value="1000ml">1000 ml</option>
+                        </select>
+                </div>
+                <div class="btn-group button">
+                  <button class="btn">Add to Cart</button>
+                  <button class="btn">Buy Now</button>
+                </div>
               </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/offer8.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">No Virus Bio Viricide</h5>
-                <p>Geolife Agritech India Pvt Ltd </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>285<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>700</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>415</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">250ml</option>
-                  <option value="500ml">500ml</option>
-                  <option value="750ml">750ml</option>
-                  <option value="1000ml">1000ml</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
             </div>
           </div>
         </div>
-
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart9.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Sagarika Gold Growth</h5>
-                <p>IFFCO </p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>296<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>385</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>89</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">250ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1000ml</option>S
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart10.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Fantac Plus Growth promo</h5>
-                <p>COromandal INternational</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>247<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>430</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>183</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">10gms</option>
-                  <option value="500ml">20gms</option>
-                  <option value="750ml">100gms</option>
-                  <option value="1000ml">250gms</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart11.avif" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">JANATA AGRO SEMAN</h5>
-                <p>JANATA AGRO PRODUCTS </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>330<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>350</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>20</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">250gms</option>
-                  <option value="500ml">500gms</option>
-                  <option value="750ml">750gms</option>
-                  <option value="1000ml">1000gms</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart12.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Sulphur Liquid Fertilizer</h5>
-                <p>Multiplex </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>279<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>440</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>161</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">250ml</option>
-                  <option value="500ml">500ml</option>
-                  <option value="750ml">750ml</option>
-                  <option value="1000ml">1ltr</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart13.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Isabion Biostimulant</h5>
-                <p>Syngenta</p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>154<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>225</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>71</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">250ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1000ml</option>S
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart14.avif" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">JANATA SEMAG-GROWT</h5>
-                <p>JANATA AGRO PRODUCTS</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>330<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>350</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>20</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">10gms</option>
-                  <option value="500ml">20gms</option>
-                  <option value="750ml">100gms</option>
-                  <option value="1000ml">250gms</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart15.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Kranti MIcro Nutrients</h5>
-                <p>Multiplex </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>103<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>150</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>47</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">250ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1000ml</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart16.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Culter Plant Growth...</h5>
-                <p>Syngeta </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>260<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>375</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>115</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">50ml</option>
-                  <option value="500ml">200ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1ltr</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart17.avif" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">JANATA SEACUP-GROWTH</h5>
-                <p>JANATA AGRO PRODUCTS</p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>320<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>350</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>30</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">200gms</option>
-                  <option value="500ml">250gms</option>
-                  <option value="750ml">500gms</option>
-                  <option value="1000ml">1000gms</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart18.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Hoshi Growth Regulator</h5>
-                <p>Sumitomo</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>599<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>899</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>300</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">200ml</option>
-                  <option value="750ml">250ml</option>
-                  <option value="1000ml">1ltr</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart19.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Quantis Biostimultant</h5>
-                <p>Syngenta</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>140<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>212</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>72</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">100ml</option>
-                  <option value="500ml">200ml</option>
-                  <option value="750ml">500ml</option>
-                  <option value="1000ml">1ltr</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart20.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Flower Booster Multi...</h5>
-                <p>Multiplex</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>139<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>190</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>51</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">50gms</option>
-                  <option value="500ml">100gms</option>
-                  <option value="750ml">200gms</option>
-                  <option value="1000ml">500gms</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart21.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Bahaar Growth Promoter</h5>
-                <p>Tata Rallis</p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>227<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>1330</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>103</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">200 ml</option>
-                  <option value="750ml">250 ml</option>
-                  <option value="1000ml">500 ml</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart22.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">HIFILD GIBRAX SP 186...</h5>
-                <p>Hififeld AG chem (india) Pvt Ltd</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>538<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>1050</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>512</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">100 gms</option>
-                  <option value="500ml">200 gms</option>
-                  <option value="750ml">250 gms</option>
-                  <option value="1000ml">500 gms</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart23.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">V-Hume Growth Promoter</h5>
-                <p>Vanproz</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>349<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>400</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>51</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">200 ml</option>
-                  <option value="750ml">500 ml</option>
-                  <option value="1000ml">1 ltr</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart24.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Flower Booster multi...</h5>
-                <p>Bayer</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>1333<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>1800</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>467</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">200 ml</option>
-                  <option value="750ml">250 ml</option>
-                  <option value="1000ml">500 ml</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="row gx-4"> 
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart25.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">Ralligold GR Biofertilizer</h5>
-                <p>Tata Rallis</p>
-                <span ><i class="fa-solid fa-indian-rupee-sign"></i>838<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>22</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>103</span> <br>
-                <b>Size: </b>
-                <select class="rs mt-3">
-                  <option value="250ml">1 kgs</option>
-                  <option value="500ml">2 kgs</option>
-                  <option value="750ml">3 kgs</option>
-                  <option value="1000ml">5 kgs</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-2" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-2">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart26.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">AMRUTA COTTON GROW...</h5>
-                <p>Amruta Organic </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>597<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>655</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>58</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">200 ml</option>
-                  <option value="750ml">500 ml</option>
-                  <option value="1000ml">1 ltr</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart27.avif" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">BASF Nutrixion Cal Growth</h5>
-                <p>Bharat Agro Chemicals </p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>279<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>480</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>201</span> <br>
-                <b>Size:</b>
-                <select class="rs mt-2">
-
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">200 ml</option>
-                  <option value="750ml">500 ml</option>
-                  <option value="1000ml">1 ltr</option>
-                </select>
-               <button> <a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-               <button> <a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-            </div>
-          </div>
-
-         <div class="col-md-3 mt-3">
-            <div class="card" >
-              <img src="./images/cart28.webp" class="card-img-top" alt="..." >
-              <div class="card-body">
-                <h5 class="card-title">AMRUTH ADHAAR </h5>
-                <p>Amrutha Organic</p>
-                <span><i class="fa-solid fa-indian-rupee-sign " ></i>491<strike><i class="fa-solid fa-indian-rupee-sign rs"></i>517</strike></span>
-                <span class="color">Save <i class="fa-solid fa-indian-rupee-sign"></i>26</span> <br>
-                <b >Size:</b>
-                <select class="rs mt-2">
-                  <option value="250ml">100 ml</option>
-                  <option value="500ml">250 ml</option>
-                  <option value="750ml">500 ml</option>
-                  <option value="1000ml">1000 ml</option>
-                </select>
-                <button><a href="#" class="btn btn-primary mt-3" >Add To Cart</a></button>
-                <button><a href="#" class="btn btn-primary mt-3">Buy Now</a></button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
       </div>
- </section>
+    
+    </section>
+       
     <!-- footer section -->
-    <footer>
-        <div class="container ">
-          <div class="row md:py-8">
-            <div class="col-md-6 mt-5">
-              <img src="./images/bighaat-logo.webp" alt="">
-              <p>BigHaat is one of the largest and innovative Indian full-stack AgriTech platforms that is dedicated to revolutionizing the agricultural industry in India. The platform leverages technology to provide a wide range of solutions and services to farmers, helping them optimize their agricultural practices, increase productivity, and ultimately improve their livelihoods.</p>
-              <img class="qr " src="./images/mobile downloadapp.webp" alt=""> <br>
-              <img class="mt-3" src="./images/instagram.webp" alt="">
-              <img class="mt-3" src="./images/facebook.webp" alt="">
-              <img class="mt-3" src="./images/youtube.webp" alt="">
-              <img class="mt-3" src="./images/linkdin.webp" alt="">
-            </div>
-            <div class="col-md-6 md:py-8 mt-5">
-              <div class="row">
-            <div class="col-md-6 mt-4">
-              <h4 class="color">Quick Links</h4>
-              <li>About us</li>
-              <li>Reach Us</li>
-              <li>Media Links</li>
-              <li>Privacy Policy</li>
-              <li>Return & Refund Policy</li>
-              <li>Terms of Services</li>
-              <li>Careers</li>
-              <li>Shipping/Delivery Police</li>
-              <li>FAQ</li>
-              <li>Sitemap</li>
-              
-            </div>
-            <div class="col-md-6 mt-4 ">
-              <h4 class="color">Contact Us</h4>
-              <p>Missed Call To Order</p>
-              <button class="num">1800 3030 2434</button>
-              <p class="mt-5">Whatsapp:</p>
-              <button class="num">+91 8005 979797</button> 
-            </div>
+    <footer class="mt-5">
+      <div class="container ">
+        <div class="row md:py-8">
+          <div class="col-md-6 mt-5">
+            <img src="./images/bighaat-logo.webp" alt="">
+            <p>BigHaat is one of the largest and innovative Indian full-stack AgriTech platforms that is dedicated to revolutionizing the agricultural industry in India. The platform leverages technology to provide a wide range of solutions and services to farmers, helping them optimize their agricultural practices, increase productivity, and ultimately improve their livelihoods.</p>
+            <img class="qr " src="./images/mobile downloadapp.webp" alt=""> <br>
+            <img class="mt-3" src="./images/instagram.webp" alt="">
+            <img class="mt-3" src="./images/facebook.webp" alt="">
+            <img class="mt-3" src="./images/youtube.webp" alt="">
+            <img class="mt-3" src="./images/linkdin.webp" alt="">
           </div>
+          <div class="col-md-6 md:py-8 mt-5">
+            <div class="row">
+          <div class="col-md-6 mt-4">
+            <h4 class="color">Quick Links</h4>
+            <li>About us</li>
+            <li>Reach Us</li>
+            <li>Media Links</li>
+            <li>Privacy Policy</li>
+            <li>Return & Refund Policy</li>
+            <li>Terms of Services</li>
+            <li>Careers</li>
+            <li>Shipping/Delivery Police</li>
+            <li>FAQ</li>
+            <li>Sitemap</li>
             
           </div>
+          <div class="col-md-6 mt-4 ">
+            <h4 class="color">Contact Us</h4>
+            <p>Missed Call To Order</p>
+            <button class="num">1800 3030 2434</button>
+            <p class="mt-5">Whatsapp:</p>
+            <button class="num">+91 8005 979797</button> 
+          </div>
         </div>
-        <hr class="dropdown-divider"><hr>
-        <h6 class="text-center">Copyright © 2025 BigHaat Agro Private Limited</h6>
-        <hr class="dropdown-divider"><hr>
-       </footer>
-    
+          
+        </div>
+      </div>
+      <hr class="dropdown-divider"><hr>
+      <h6 class="text-center">Copyright © 2025 BigHaat Agro Private Limited</h6>
+      <hr class="dropdown-divider"><hr>
+     </footer>
 </body>
 </html>

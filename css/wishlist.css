@@ -107,9 +107,7 @@ body{
 }
 
 /* Reduce navbar height */
-.navbar {
-    height: 50px; /* Reduced height */
-}
+
 
 .navbar .navbar-brand img {
     height: 50px; /* Adjust logo size */
@@ -128,18 +126,19 @@ body{
     height: 40px; /* Increased height */
     width: 300px;
     
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+    /* border-top-right-radius: 0%; */
+    /* border-bottom-right-radius: 0%; */
 }
 
 /* Adjust the button height */
 .navbar .btn-outline-success {
-    height: 40px;
-    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    width: 80px;
     border: none;
     background-color: rgb(250, 149, 39);
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+    /* border-top-left-radius: 0%; */
+    /* border-bottom-left-radius: 0%; */
 }
 
 
@@ -163,7 +162,7 @@ body{
 }
 .form-label{
     font-size: 30px;
-    padding-left: 190px;
+    /* padding-left: 190px; */
     
 }
 .account{
@@ -172,8 +171,9 @@ body{
 }
 #wishlist{
     
-    width: 300px;
-    margin-left: 400px;
+    width:auto;
+    height: 200px;
+    /* margin-left: 400px; */
     
     }
     #form{

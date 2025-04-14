@@ -106,10 +106,7 @@ body{
     margin: 0 15px; /* Adding space between items */
 }
 
-/* Reduce navbar height */
-.navbar {
-    height: 50px; /* Reduced height */
-}
+
 
 .navbar .navbar-brand img {
     height: 50px; /* Adjust logo size */
@@ -125,23 +122,23 @@ body{
 
 /* Adjust search input field height and width */
 .navbar .form-control {
-    height: 40px; /* Increased height */
-    width: 300px;
-    
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+  height: 40px; /* Increased height */
+  width: 300px;
+  
+  /* border-top-right-radius: 0%; */
+  /* border-bottom-right-radius: 0%; */
 }
 
 /* Adjust the button height */
 .navbar .btn-outline-success {
-    height: 40px;
-    width: 100px;
-    border: none;
-    background-color: rgb(250, 149, 39);
-    border-top-left-radius: 0%;
-    border-bottom-left-radius: 0%;
+  height: auto;
+  margin-left: 10px;
+  width: 80px;
+  border: none;
+  background-color: rgb(250, 149, 39);
+  /* border-top-left-radius: 0%; */
+  /* border-bottom-left-radius: 0%; */
 }
-
 
 .navbar .form-control:focus ~ .navbar-nav .nav-item,
 .navbar .form-control:focus ~ .navbar-nav .dropdown {

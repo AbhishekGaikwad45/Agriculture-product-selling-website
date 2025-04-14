@@ -93,7 +93,9 @@ body{
 {
   background-color: white;
 }
-
+.container-fluid2{
+  background-color: whitesmoke;
+}
 
 /* Custom styles for centering the navbar items */
 .navbar-nav {
@@ -106,10 +108,7 @@ body{
   margin: 0 15px; /* Adding space between items */
 }
 
-/* Reduce navbar height */
-.navbar {
-  height: 50px; /* Reduced height */
-}
+
 
 .navbar .navbar-brand img {
   height: 50px; /* Adjust logo size */
@@ -125,21 +124,22 @@ body{
 
 /* Adjust search input field height and width */
 .navbar .form-control {
-  height: 40px; /* Increased height */
+  height: 40px; 
   width: 300px;
   
-  border-top-right-radius: 0%;
-  border-bottom-right-radius: 0%;
+  /* border-top-right-radius: 0%; */
+  /* border-bottom-right-radius: 0%; */
 }
 
 /* Adjust the button height */
 .navbar .btn-outline-success {
   height: 40px;
-  width: 100px;
+  margin-left: 10px;
+  width: 80px;
   border: none;
   background-color: rgb(250, 149, 39);
-  border-top-left-radius: 0%;
-  border-bottom-left-radius: 0%;
+  /* border-top-left-radius: 0%; */
+  /* border-bottom-left-radius: 0%; */
 }
 
 
